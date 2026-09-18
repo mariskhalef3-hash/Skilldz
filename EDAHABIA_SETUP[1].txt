@@ -1,0 +1,12 @@
+SkillDZ — version prête pour intégration Edahabia
+
+Cette version ajoute :
+- checkout.html
+- bouton « Payer avec Edahabia »
+- parcours prévu : paiement → confirmation → déblocage
+- aucune clé API, aucun secret et aucun paiement réel dans le code
+
+Important :
+GitHub Pages héberge uniquement le front-end statique. Pour un vrai paiement et un déblocage sécurisé, il faudra un backend, une base de données, un compte web-marchand autorisé et les paramètres d'intégration fournis par le prestataire/organisme de paiement.
+
+Ne place jamais de clé secrète dans un fichier HTML public ou dans GitHub.

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paiement — SkillDZ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033}
+.nav{height:68px;background:#fff;border-bottom:1px solid #e5eaf2;display:flex;align-items:center;padding:0 6%}
+.logo{font-size:25px;font-weight:900;color:#0b1630}.logo span{color:#2563eb}
+.container{max-width:760px;margin:auto;padding:30px 20px}.card{background:#fff;border:1px solid #e3e8f0;border-radius:18px;padding:25px;margin:18px 0}
+.price{font-size:32px;font-weight:900;margin:10px 0 20px}.btn{border:0;border-radius:11px;padding:14px 18px;background:#2563eb;color:#fff;font-weight:800;cursor:pointer;width:100%;font-size:16px}
+.back{display:inline-block;margin-bottom:18px;color:#2563eb;font-weight:700}.notice{background:#fff7ed;color:#9a3412;padding:14px;border-radius:10px;line-height:1.5}
+.steps{display:grid;gap:10px;margin:20px 0}.step{padding:13px;border:1px solid #e3e8f0;border-radius:10px;background:#fafcff}
+small{color:#64748b}
+</style>
+</head>
+<body>
+<nav class="nav"><a class="logo" href="index.html">Skill<span>DZ</span></a></nav>
+<main class="container">
+<a class="back" href="formation.html">← Retour à la formation</a>
+<div class="card">
+<span style="color:#2563eb;font-weight:800">PAIEMENT</span>
+<h1>Formation e-commerce en Algérie</h1>
+<div class="price">4 900 DA</div>
+<p>Accès à vie • PDF • espace étudiant • progression</p>
+
+<div class="steps">
+<div class="step">1️⃣ Choix du moyen de paiement : <b>Edahabia</b></div>
+<div class="step">2️⃣ Redirection vers la plateforme de paiement officielle</div>
+<div class="step">3️⃣ Confirmation du paiement</div>
+<div class="step">4️⃣ Déblocage automatique de la formation</div>
+</div>
+
+<div class="notice">
+<strong>Mode préparation :</strong> cette page prépare le parcours Edahabia, mais aucun paiement réel n'est exécuté ici. 
+L'intégration réelle nécessite les accès marchands et la validation officielle.
+</div>
+
+<br>
+<button class="btn" onclick="demo()">Continuer vers Edahabia (démo)</button>
+<p><small>Les clés, secrets et identifiants de paiement ne doivent jamais être placés dans GitHub ou dans le code du navigateur.</small></p>
+</div>
+</main>
+<script>
+function demo(){
+  localStorage.setItem('skilldz_payment_status','pending');
+  alert('Démo : ici, le site redirigera vers la passerelle Edahabia une fois l’intégration officielle configurée.');
+}
+</script>
+</body>
+</html>
