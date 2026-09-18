@@ -1,0 +1,18 @@
+SKILLDZ V5 — ÉTAPE PRODUCTION
+============================
+
+Le front-end est prêt. Le paiement n'est volontairement pas branché ici.
+
+Pour rendre la plateforme réellement opérationnelle, il faut :
+1. Hébergement + domaine.
+2. Backend sécurisé.
+3. Base de données : utilisateurs, formations, commandes, progression.
+4. Authentification sécurisée.
+5. Connexion du moyen de paiement choisi par le responsable de l'activité.
+6. Webhook/confirmation serveur du paiement.
+7. Après confirmation : création de l'accès étudiant à la formation.
+8. Protection du PDF et des contenus côté serveur.
+
+Important : localStorage dans cette V5 est uniquement une simulation et ne doit pas servir pour de vrais comptes ou paiements.
+
+Les comptes marchands/paiement doivent être créés et vérifiés par un adulte/responsable lorsque cela est requis.
